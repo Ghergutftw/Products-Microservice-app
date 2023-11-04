@@ -31,3 +31,16 @@ j
 :order-service/src/main/java/app/dto/InventoryResponse.java,b\6\b6b3dd2d89888f1b9880968632ed9893f8bc28d9
 o
 ?order-service/src/main/java/app/controller/OrderController.java,d\9\d9c02cfdcfaf6df1f029d8b5f206316cb48caa83
+H
+discovery-server/pom.xml,2\c\2c58c7878e43d126fc56cae853d5b06de57d0b3e
+\
+,discovery-server/src/main/java/com/Main.java,f\3\f31e60074c6ce82e37623f94254656d21f6fb031
+X
+(discovery-server/src/main/java/Main.java,2\5\253f6885fd794873893da1ad9ed823e1241ab789
+~
+Ndiscovery-server/src/main/java/discoveryserver/DiscoveryServerApplication.java,4\5\45d7eac55d51d96a09a891efd52c2ba02cbe6d04
+D
+discovery-server.iml,d\8\d8200b52837133e80a2d9330364e02ab8feb2b0c
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
