@@ -1,6 +1,8 @@
 package app.controller;
 
 import app.dto.InventoryResponse;
+import app.model.Inventory;
+import app.repository.InventoryRepository;
 import app.service.InventoryService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +19,8 @@ public class InventoryController {
 
     private final InventoryService inventoryService;
 
+    private final InventoryRepository  inventoryRepository;
+
 //    http://localhost:8082/api/inventory/iphone-13,iphone-13-red
 //    http://localhost:8082/api/inventory?sku-code=iphone-13&sku-code=iphone-13-red
     @GetMapping()
@@ -26,4 +30,9 @@ public class InventoryController {
         return inventoryService.isInStock(skuCode);
     }
 
+    @GetMapping("/all")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Inventory> isInStock() throws InterruptedException {
+        return inventoryRepository.findAll();
+    }
 }
